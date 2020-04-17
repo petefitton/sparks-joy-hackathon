@@ -44,6 +44,17 @@ h2 {
     
 }
 
+img {
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+
+}
+
+#image-container {
+    text-align: center;
+}
+
 /* ------------------------------------ FORM CSS -------------------------------------------- */
 
 .container {
@@ -52,6 +63,7 @@ h2 {
     /* margin-left: 140px;
     margin-top: 60px; */
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #signup {
