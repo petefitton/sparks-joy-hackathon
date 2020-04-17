@@ -57,14 +57,14 @@ img {
 
 /* ------------------------------------ FORM CSS -------------------------------------------- */
 
-.container {
+/* .container {
     width: 406px;
-    max-width: 406px;
+    max-width: 406px; */
     /* margin-left: 140px;
     margin-top: 60px; */
-    margin: 0 auto;
+    /* margin: 0 auto;
     margin-bottom: 20px;
-}
+} */
 
 #signup {
     padding: 0px 25px 25px;
