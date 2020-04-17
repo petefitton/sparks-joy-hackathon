@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.headerh1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 80px;
+}
+
+p {
+    font-size: 40px;
+}
+
+header {
+    border-bottom: 2px solid black;
+    width: 100vw;
+    background-color: gray;
+    height: 87px;
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content {
+    padding-top: 89px;
+}
+
+.logoutBtn {
+    margin-bottom: 10px;
+    position: relative;
+    left: 86vw;
+    bottom: 70px;
+    font-size: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messageBtn {
+    width: 98vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.messageContainer {
+    border: 1px solid black;
+    width: 98vw;
+}
+
+.messageContainer, .messageContainer > * { 
+    /* background-color: green;  */
+    text-align: center;
+    margin: 10px;
+}
+
+.pDiv, .vidDiv {
+    border: 1px solid black;
+}
+
+.fromP {
+    text-align: left;
+}
+
+/* Below videoWrapper rules taken from: https://css-tricks.com/fluid-width-video/ */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
