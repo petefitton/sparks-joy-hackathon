@@ -52,3 +52,7 @@ function toFinish() {
     // document.getElementById("tutorial3Img").style.display = "block"
     document.getElementById("myModal2").style.display = "none"
 }
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none"
+}

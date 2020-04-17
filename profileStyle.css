@@ -367,14 +367,14 @@ textarea {
 }
 
 .tutorial1Img {
-    max-height: 350px;
+    height: 350px;
     width: auto;
     margin-left: 62px;
 }
 
 .tutorial2Img, .tutorial3Img, .tutorial4Img, .tutorial5Img {
     display: none;
-    max-height: 250px;
+    height: 350px;
     width: auto;
     margin-left: 62px;
 }
