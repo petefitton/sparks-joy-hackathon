@@ -16,3 +16,7 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+function logout() {
+  location.href='index.html'
+}

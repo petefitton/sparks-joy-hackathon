@@ -1,9 +1,10 @@
 body {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
     margin: 0;
     background-color: #FAE9E6;
+    font-family: 'Palanquin', sans-serif;
 }
 
 .headerh1 {
@@ -12,6 +13,8 @@ body {
     margin-top: 0px;
     font-size: 80px;
     color: white;
+    font-family: 'Palanquin Dark', sans-serif;
+    line-height: 68px;
 }
 
 p {
@@ -39,11 +42,22 @@ header {
 
 button {
     border-radius: 5px;
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .headerLeftDiv {
     display: flex;
+}
+
+.fontDownTriangle {
+    width: 20px;
+    transform: rotate(180deg);
+}
+
+.fontUpTriangle {
+    width: 20px;
+    position: relative;
+    top: 12px;
 }
 
 .headerRightDiv, .headerLeftDiv {
@@ -73,18 +87,17 @@ button {
     height: 70px;
     width: 65px;
     margin-left: 31px;
+    display: flex;
+    justify-content: center;
 }
 
 .secondABtn {
-    /* margin-bottom: 10px; */
-    /* position: relative; */
-    /* left: 86vw; */
-    /* bottom: 70px; */
     font-size: 50px;
-    /* margin: 14px; */
     margin: 9px;
     height: 70px;
     width: 65px;
+    display: flex;
+    justify-content: center;
 }
 
 .content {
@@ -94,7 +107,7 @@ button {
 }
 
 .messageBtn {
-    width: 60vw;
+    width: 50vw;
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 44px;
@@ -106,9 +119,7 @@ button {
 }
 
 .messageContainer {
-    border: 1px solid black;
-    width: 60vw;
-    background-color: white;
+    width: 50vw;
 }
 
 .messageContainer, .messageContainer > * { 
@@ -116,13 +127,53 @@ button {
     margin: 10px;
 }
 
+.circleImg {
+    width: 100%;
+    height: auto;
+}
+
+.messageDiv {
+    display: flex;
+    padding: 12px
+}
+
 .pDiv, .vidDiv, .imgDiv {
-    border: 1px solid black;
     padding: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
 }
 
 .fromP {
     text-align: left;
+    margin: 0;
+    line-height: 30px;
+    font-weight: bold;
+    color: #3B79A6;
+}
+
+.pMessage {
+    margin: 0;
+    text-align: left;
+    line-height: 49px;
+    margin-top: 16px;
+}
+
+.pTagsDiv {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.pLeftAlign {
+    text-align: left;
+    padding: 15px;
+    margin-top: 0;
+}
+
+.picDiv {
+    max-width: 88px;
+    min-width: 88px;
 }
 
 img {
@@ -130,19 +181,17 @@ img {
 }
 
 .upArrow {
-    width: 113px;
-    transform: rotate(-90deg);
-    position: absolute;
+    width: 53px;
+    position: sticky;
     bottom: 115px;
-    right: 20px;
+    left: 93%;
 }
 
 .downArrow {
-    width: 113px;
-    transform: rotate(90deg);
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
+    width: 53px;
+    position: sticky;
+    bottom: 35px;
+    left: 93%;
 }
 
 
@@ -179,7 +228,7 @@ img {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 6% auto; /* 15% from the top and centered */
     padding: 23px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -233,13 +282,23 @@ img {
 
 .modalMidRow button {
     width: 32%;
-    height: 72px;
+    height: 100px;
     color: white;
-    font-size: 18px;
+    font-size: 31px;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D7826F;
+    justify-content: space-evenly;
 }
 
-.videoBtn {
-    background-color: #D7826F;
+.buttonImg {
+    width: 45px;
+    margin-top: 5px;
+}
+
+/* .videoBtn {
 }
 
 .imageBtn {
@@ -248,7 +307,7 @@ img {
 
 .linkBtn {
     background-color: #D7826F;
-}
+} */
 
 .modalBottomRow {
     display: flex;
@@ -258,9 +317,10 @@ img {
 
 .modalBottomRow button {
     width: 32%;
-    height: 72px;
+    height: 100px;
     color: white;
-    font-size: 23px;
+    font-size: 31px;
+    border-color: transparent;
 }
 
 
@@ -292,4 +352,5 @@ textarea {
     margin: 0px auto;
     resize: none;
     border-radius: 5px;
+    padding: 10px;
 }

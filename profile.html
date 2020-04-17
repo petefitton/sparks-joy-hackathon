@@ -5,58 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="profileStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin&family=Palanquin+Dark:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="headerLeftDiv">
-            <button class="firstABtn">A</button>
-            <button class="secondABtn">A</button>
+            <button class="firstABtn" onclick="increaseFontSize(-10)">A<img class="fontDownTriangle" src="Triangle1.svg" alt=""></button>
+            <button class="secondABtn" onclick="increaseFontSize(10)">A<img class="fontUpTriangle" src="Triangle1.svg" alt=""></button>
             <button class="tutorialBtn">Tutorial</button>
         </div>
         <h1 class="headerh1">Memento</h1>
         <div class="headerRightDiv">
-            <button class="logoutBtn">Log Out</button>
+            <button class="logoutBtn" onclick="logout()">Log Out</button>
         </div>
     </header>
     <div class="content">
         <button class="messageBtn" id="messageBtn">Send a Message</button>
         <div class="messageContainer">
             <!-- List of items to display -->
-            <div class="pDiv">
-                <p class="fromP">From: J</p>
-                <p>THIS IS a section of text that someone has commented</p>
-            </div>
-            <div class="pDiv">
-                <p class="fromP">From: J</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maxime minima nobis voluptatum, pariatur fuga fugit harum quidem, sit sint saepe culpa et maiores cupiditate omnis enim rerum? Eius, officia?
-                </br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maxime minima nobis voluptatum, pariatur fuga fugit harum quidem, sit sint saepe culpa et maiores cupiditate omnis enim rerum? Eius, officia?</p>
-            </div>
-            <div class="pDiv">
-                <p class="fromP">From: J</p>
-                <p>THIS IS a section of text that someone has commented</p>
-            </div>
-            <div class="imgDiv">
-                <p class="fromP">From: J</p>
-                <img alt="Baby with a raised eyebrow saying, 'You mean to tell me that she's hiding behind her hands?" src="https://370g431nca8u23kfvb3cilkf-wpengine.netdna-ssl.com/wp-content/uploads/2013/05/6a0133f30ae399970b0192aa1b4c77970d-pi.jpg">
-            </div>
             <div class="vidDiv">
-                <p class="fromP">From: J</p>
+                <div class="messageDiv">
+                    <div class="picDiv">
+                        <img src="Face4.png" alt="Nancy" class="circleImg">
+                    </div>
+                    <div class="pTagsDiv">
+                        <p class="fromP">From Nancy</p>
+                        <p class="pMessage">We miss you, grandma!</p>
+                    </div>
+                </div>
                 <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rz5TGN7eUcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ao8x7o3RJSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="pDiv">
-                <p class="fromP">From: J</p>
-                <p>THIS IS a section of text that someone has commented</p>
+                <div class="messageDiv">
+                    <div class="picDiv">
+                        <img src="Face2.png" alt="Jordan" class="circleImg">
+                    </div>
+                    <div class="pTagsDiv">
+                        <p class="fromP">From Jordan</p>
+                    </div>
+                </div>
+                <p class="pLeftAlign">Hi Grandma, I hope you are well. I miss you! (heart)</p>
+            </div>
+            <div class="imgDiv">
+                <div class="messageDiv">
+                    <div class="picDiv">
+                        <img src="Face1.png" alt="Michelle" class="circleImg">
+                    </div>
+                    <div class="pTagsDiv">
+                        <p class="fromP">From Michelle</p>
+                        <p class="pMessage">Grams, baby Noah is almost walking!</p>
+                    </div>
+                </div>
+                <img alt="" src="hack1.jpg">
+            </div>
+            <div class="imgDiv">
+                <div class="messageDiv">
+                    <div class="picDiv">
+                        <img src="Face3.png" alt="Pete" class="circleImg">
+                    </div>
+                    <div class="pTagsDiv">
+                        <p class="fromP">From Pete</p>
+                        <p class="pMessage">Mom, I found this picture of you with Grandpa Richard. I miss you!</p>
+                    </div>
+                </div>
+                <img alt="" src="hack3.jpg">
             </div>
             <div class="pDiv">
-                <p class="fromP">From: J</p>
-                <p>THIS IS a section of text that someone has commented</p>
+                <div class="messageDiv">
+                    <div class="picDiv">
+                        <img src="Face4.png" alt="Nancy" class="circleImg">
+                    </div>
+                    <div class="pTagsDiv">
+                        <p class="fromP">From Nancy</p>
+                    </div>
+                </div>
+                <p class="pLeftAlign">Mom, Lena sends you a kiss! We hope you are feeling great. We love you!</p>
+            </div>
+            <div class="vidDiv">
+                <div class="messageDiv">
+                    <div class="picDiv">
+                        <img src="Face5.png" alt="John" class="circleImg">
+                    </div>
+                    <div class="pTagsDiv">
+                        <p class="fromP">From John</p>
+                        <p class="pMessage">I know you love this song! </p>
+                    </div>
+                </div>
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e33t7x-3MQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
-    <img src="arrow.svg" alt="arrow for scrolling upwards" class="upArrow">
-    <img src="arrow.svg" alt="arrow for scrolling downwards" class="downArrow">
+    <img src="Arrow Up.svg" alt="arrow for scrolling upwards" class="upArrow" onclick="scrollUp()">
+    <img src="Arrow Down.svg" alt="arrow for scrolling downwards" class="downArrow" onclick="scrollDown()">
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
@@ -71,9 +115,15 @@
                     <textarea name="Text1" rows="5" placeholder="Your Message..."></textarea>
                 <!-- </div> -->
                 <div class="modalMidRow">
-                    <button class="videoBtn">Record a Video</button>
-                    <button class="imageBtn">Send an Image</button>
-                    <button class="linkBtn">Send a Link</button>
+                    <button class="videoBtn">
+                        <img src="Record Video Icon.svg" alt="" class="buttonImg">
+                        Record a Video</button>
+                    <button class="imageBtn">
+                        <img src="Photo Icon.svg" alt="" class="buttonImg">
+                        Send an Image</button>
+                    <button class="linkBtn">
+                        <img src="Link Icon.svg" alt="" class="buttonImg">
+                        Send a Link</button>
                 </div>
                 <div class="modalBottomRow">
                     <button class="cancelBtn">Cancel</button>
@@ -85,5 +135,6 @@
     </div>
     <script src="profileScript.js"></script>
     <script src="profileScript2.js"></script>
+    <script src="profileScript3.js"></script>
 </body>
 </html>
