@@ -354,3 +354,55 @@ textarea {
     border-radius: 5px;
     padding: 10px;
 }
+
+.headerMobile, .bottomControls {
+    display: none;
+}
+
+@media (max-width: 870px) {
+    .messageBtn {
+        width: 90vw;
+    }
+    
+    .messageContainer {
+        width: 90vw;
+    }
+
+    .upArrow {
+        display: none;
+    }
+
+    .downArrow {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .headerMobile {
+        display: block;
+        background-color: #D7826F;
+        height: 87px;
+        z-index: 1;
+    }
+
+    .bottomControls {
+        height: 100px;
+        background-color: #3B79A6;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .bottomADiv {
+        display: flex;
+    }
+
+    .hamburgerIcon {
+        padding-top: 10px;
+    }
+}

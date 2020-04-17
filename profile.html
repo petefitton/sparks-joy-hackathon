@@ -19,6 +19,9 @@
             <button class="logoutBtn" onclick="logout()">Log Out</button>
         </div>
     </header>
+    <div class="headerMobile">
+        <h1 class="headerh1">Memento</h1>
+    </div>
     <div class="content">
         <button class="messageBtn" id="messageBtn">Send a Message</button>
         <div class="messageContainer">
@@ -46,7 +49,7 @@
                         <p class="fromP">From Jordan</p>
                     </div>
                 </div>
-                <p class="pLeftAlign">Hi Grandma, I hope you are well. I miss you! (heart)</p>
+                <p class="pLeftAlign">Hi Grandma, I hope you are well. I miss you! &#x2764</p>
             </div>
             <div class="imgDiv">
                 <div class="messageDiv">
@@ -97,6 +100,15 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/e33t7x-3MQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="bottomControls">
+        <div>
+            <img src="MenuIcon.svg" alt="Menu" class="hamburgerIcon">
+        </div>
+        <div class="bottomADiv">
+            <button class="firstABtn" onclick="increaseFontSize(-10)">A<img class="fontDownTriangle" src="Triangle1.svg" alt=""></button>
+            <button class="secondABtn" onclick="increaseFontSize(10)">A<img class="fontUpTriangle" src="Triangle1.svg" alt=""></button>
         </div>
     </div>
     <img src="Arrow Up.svg" alt="arrow for scrolling upwards" class="upArrow" onclick="scrollUp()">
