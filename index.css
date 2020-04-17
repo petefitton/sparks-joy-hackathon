@@ -48,21 +48,22 @@ img {
     margin-left: auto;
     display: block;
     margin-right: auto;
-    width: 35%;
+    width: 29%;
 
 }
 
 #image-container {
     text-align: center;
+    margin-top: 20px;
 }
 
 p {
     font-size: 22px;
 }
 
-label {
+/* label {
     font-size: 22px;
-}
+} */
 
 /* ------------------------------------ FORM CSS -------------------------------------------- */
 
@@ -78,9 +79,6 @@ label {
 #signup {
     padding: 0px 25px 25px;
     background: #fff;
-    box-shadow: 
-        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
-        0px 4px 20px rgba( 0,0,0,0.33 );
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -104,20 +102,14 @@ label {
 
 #signup .inputs label {
     color: #8f8f8f;
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 7px;
     display: block;
 }
 
-input::-webkit-input-placeholder {
-    color:    #b5b5b5;
-}
 
-input:-moz-placeholder {
-    color:    #b5b5b5;
-}
 
 #signup .inputs input[type=email], input[type=password] {
     background: #f5f5f5;
