@@ -1,10 +1,4 @@
-/* html {
-  background: url(background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
+
 
 body {
   margin: 0 auto;
@@ -61,20 +55,9 @@ p {
     font-size: 22px;
 }
 
-/* label {
-    font-size: 22px;
-} */
 
 /* ------------------------------------ FORM CSS -------------------------------------------- */
 
-/* .container {
-    width: 406px;
-    max-width: 406px; */
-    /* margin-left: 140px;
-    margin-top: 60px; */
-    /* margin: 0 auto;
-    margin-bottom: 20px;
-} */
 
 #signup {
     padding: 0px 25px 25px;
@@ -113,7 +96,7 @@ p {
 
 #signup .inputs input[type=email], input[type=password] {
     background: #f5f5f5;
-    font-size: 0.8rem;
+    font-size: 1rem;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -127,7 +110,7 @@ p {
 
 #signup .inputs input[type=email]:focus, input[type=password]:focus {
     background: #fff;
-    box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+    box-shadow: 0px 0px 0px 3px #D7826F, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
     outline: none;   
 }
 
@@ -147,7 +130,7 @@ p {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid#ffda79;
+    border: 1px solid #D7826F;
     -moz-box-shadow:
         0px 5px 5px rgba(000,000,000,0.1),
         inset 0px 1px 0px rgba(255,255,255,0.5);
@@ -167,10 +150,21 @@ p {
 
 #submit1 {
     background: #D7826F;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    
 }
 
 #submit2 {
     background: #D7826F;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+   
+}
+
+input {
+    margin-bottom: 30px;
 }
