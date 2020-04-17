@@ -4,41 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap"
+      rel="stylesheet"
+    />
     <script src="index.js"></script>
     <title>Memento</title>
   </head>
   <body>
     <header>
-        <h1>Memento</h1>
-        <h2>Share and receive with the ones you love <span>&hearts;</span></h2>   
+      <h1>Memento</h1>
+      <h2>Share and receive with the ones you love <span>&hearts;</span></h2>
     </header>
-    <div class="container">
+    <!-- <div class="container"> -->
+      <form id="signup">
 
-        <form id="signup">
-    
-            <div class="header">
-            
-                <h3>Sign Up / Login</h3>
-                
-                <p>Get started with MEMENTO</p>
-                
-            </div>
-            
-            <div class="sep"></div>
-    
-            <div class="inputs">
-            
-                <input type="email" placeholder="Email" autofocus />
-            
-                <input type="password" placeholder="Password" />
-            
-                <a id="submit" href="#">GO</a>
-            
-            </div>
-    
-        </form>
-    
+        <div class="sep"></div>
+
+        <div class="inputs">
+          <label for="">Email</label>
+          <input type="email"  autofocus />
+          <label for="">Password</label>
+          <input type="password"  />
+
+          <a id="submit1" href="#">Signup</a>
+          <a id="submit2" href="#">Login</a>
+        </div>
+      </form>
+    <!-- </div> -->
+    <div id="img-container">
+      <img src="hacklanding.jpg" alt="Brand Image with Family" />
     </div>
-
   </body>
 </html>
