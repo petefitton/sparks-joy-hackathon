@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    background-color: #FAE9E6;
 }
 
 .headerh1 {
@@ -10,6 +11,7 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
     font-size: 80px;
+    color: white;
 }
 
 p {
@@ -17,11 +19,12 @@ p {
 }
 
 header {
-    border-bottom: 2px solid black;
     width: 100vw;
-    background-color: gray;
+    background-color: #D7826F;
     height: 87px;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sticky {
@@ -34,12 +37,54 @@ header {
     padding-top: 89px;
 }
 
+button {
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+}
+
+.headerLeftDiv {
+    display: flex;
+}
+
+.headerRightDiv, .headerLeftDiv {
+    width: 350px;
+}
+
 .logoutBtn {
     margin-bottom: 10px;
-    position: relative;
-    left: 86vw;
-    bottom: 70px;
-    font-size: 40px;
+    font-size: 35px;
+    margin: 9px;
+    height: 70px;
+    float: right;
+    margin-right: 20px;
+    padding: 13px;
+}
+
+.tutorialBtn {
+    font-size: 35px;
+    margin: 9px;
+    height: 70px;
+    padding: 13px;
+}
+
+.firstABtn {
+    font-size: 30px;
+    margin: 9px;
+    height: 70px;
+    width: 65px;
+    margin-left: 31px;
+}
+
+.secondABtn {
+    /* margin-bottom: 10px; */
+    /* position: relative; */
+    /* left: 86vw; */
+    /* bottom: 70px; */
+    font-size: 50px;
+    /* margin: 14px; */
+    margin: 9px;
+    height: 70px;
+    width: 65px;
 }
 
 .content {
@@ -52,12 +97,18 @@ header {
     width: 60vw;
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 50px;
+    font-size: 44px;
+    background-color: #3B79A6;
+    color: white;
+    height: 74px;
+    border-radius: 12px;
+    border-color: transparent;
 }
 
 .messageContainer {
     border: 1px solid black;
     width: 60vw;
+    background-color: white;
 }
 
 .messageContainer, .messageContainer > * { 
@@ -77,6 +128,23 @@ header {
 img {
     width: 100%;
 }
+
+.upArrow {
+    width: 113px;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 115px;
+    right: 20px;
+}
+
+.downArrow {
+    width: 113px;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
 
 /* Below videoWrapper rules taken from: https://css-tricks.com/fluid-width-video/ */
 .videoWrapper {
@@ -111,18 +179,22 @@ img {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 23px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column; */
 }
   
 /* The Close Button */
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 58px;
     font-weight: bold;
+    line-height: 40px;
 }
 
 .close:hover, .close:focus {
@@ -131,11 +203,93 @@ img {
     cursor: pointer;
 }
 
-.inputsDiv {
+.modalWrapper {
+    width: 98%;
     display: flex;
     flex-direction: column;
 }
 
+.modalTopRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalTopP {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    /* margin-left: 22px; */
+}
+
+/* .inputsDiv {
+    display: flex;
+    flex-direction: column;
+} */
+
+.modalMidRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+}
+
+.modalMidRow button {
+    width: 32%;
+    height: 72px;
+    color: white;
+    font-size: 18px;
+}
+
+.videoBtn {
+    background-color: #D7826F;
+}
+
+.imageBtn {
+    background-color: #D7826F;
+}
+
+.linkBtn {
+    background-color: #D7826F;
+}
+
+.modalBottomRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.modalBottomRow button {
+    width: 32%;
+    height: 72px;
+    color: white;
+    font-size: 23px;
+}
+
+
+.cancelBtn {
+    background-color: #404040;
+}
+
+.sendBtn {
+    background-color: #3B79A6;
+}
+
 label {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
     font-size: 60px;
+}
+
+input {
+    width: 50vw;
+    height: 100px;
+    margin: 7px;
+    font-size: 50px;
+}
+
+textarea {
+    font-size: 30px;
+    width: 100%;
+    margin: 0px auto;
+    resize: none;
+    border-radius: 5px;
 }

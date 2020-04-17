@@ -8,11 +8,18 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="headerh1">MEMENTO</h1>
-        <button class="logoutBtn">Logout</button>
+        <div class="headerLeftDiv">
+            <button class="firstABtn">A</button>
+            <button class="secondABtn">A</button>
+            <button class="tutorialBtn">Tutorial</button>
+        </div>
+        <h1 class="headerh1">Memento</h1>
+        <div class="headerRightDiv">
+            <button class="logoutBtn">Log Out</button>
+        </div>
     </header>
     <div class="content">
-        <button class="messageBtn" id="messageBtn">Send a message</button>
+        <button class="messageBtn" id="messageBtn">Send a Message</button>
         <div class="messageContainer">
             <!-- List of items to display -->
             <div class="pDiv">
@@ -48,26 +55,30 @@
             </div>
         </div>
     </div>
+    <img src="arrow.svg" alt="arrow for scrolling upwards" class="upArrow">
+    <img src="arrow.svg" alt="arrow for scrolling downwards" class="downArrow">
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Upload your content here:</p>
-            <div class="inputsDiv">
-                <label>
-                    Text
-                    <input type="text" name="" id="">
-                </label>
-                <label>
-                    Image URL
-                    <input type="text" name="" id="">
-                </label>
-                <label>
-                    Video URL
-                    <input type="text" name="" id="">
-                </label>
+            <div class="modalWrapper">
+                <div class="modalTopRow">
+                    <p class="modalTopP">Message to Nancy</p>
+                    <span class="close">X</span>
+                </div>
+                <!-- <div class="inputsDiv"> -->
+                    <textarea name="Text1" rows="5" placeholder="Your Message..."></textarea>
+                <!-- </div> -->
+                <div class="modalMidRow">
+                    <button class="videoBtn">Record a Video</button>
+                    <button class="imageBtn">Send an Image</button>
+                    <button class="linkBtn">Send a Link</button>
+                </div>
+                <div class="modalBottomRow">
+                    <button class="cancelBtn">Cancel</button>
+                    <button class="sendBtn">Send</button>
+                </div>
             </div>
         </div>
     
