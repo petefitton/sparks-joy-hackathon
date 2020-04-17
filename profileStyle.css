@@ -49,7 +49,7 @@ header {
 }
 
 .messageBtn {
-    width: 98vw;
+    width: 60vw;
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 50px;
@@ -57,11 +57,10 @@ header {
 
 .messageContainer {
     border: 1px solid black;
-    width: 98vw;
+    width: 60vw;
 }
 
 .messageContainer, .messageContainer > * { 
-    /* background-color: green;  */
     text-align: center;
     margin: 10px;
 }
