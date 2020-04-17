@@ -355,6 +355,34 @@ textarea {
     padding: 10px;
 }
 
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 7px auto; /* 15% from the top and centered */
+    padding: 23px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.tutorial1Img {
+    max-height: 350px;
+    width: auto;
+    margin-left: 62px;
+}
+
+.tutorial2Img, .tutorial3Img, .tutorial4Img, .tutorial5Img {
+    display: none;
+    max-height: 250px;
+    width: auto;
+    margin-left: 62px;
+}
+
+#next2, #next3, #next4, #next5 {
+    display: none;
+}
+
 .headerMobile, .bottomControls {
     display: none;
 }

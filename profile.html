@@ -12,7 +12,7 @@
         <div class="headerLeftDiv">
             <button class="firstABtn" onclick="increaseFontSize(-10)">A<img class="fontDownTriangle" src="Triangle1.svg" alt=""></button>
             <button class="secondABtn" onclick="increaseFontSize(10)">A<img class="fontUpTriangle" src="Triangle1.svg" alt=""></button>
-            <button class="tutorialBtn">Tutorial</button>
+            <button class="tutorialBtn" id="tutorialBtn">Tutorial</button>
         </div>
         <h1 class="headerh1">Memento</h1>
         <div class="headerRightDiv">
@@ -141,6 +141,31 @@
                     <button class="cancelBtn">Cancel</button>
                     <button class="sendBtn">Send</button>
                 </div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- The Modal -->
+    <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <div class="modalWrapper2">
+                <div class="modalTopRow">
+                    <p class="modalTopP">Tutorial</p>
+                    <span class="close">X</span>
+                </div>
+                <img id="tutorial1Img" class="tutorial1Img" src="tutorial1.png" alt="Tutorial for using font size buttons">
+                <img id="tutorial2Img" class="tutorial2Img" src="tutorial2" alt="Tutorial for using font size buttons">
+                <img id="tutorial3Img" class="tutorial3Img" src="tutorial3" alt="Tutorial for using font size buttons">
+            </div>
+            <div class="modalBottomRow">
+                <button class="cancelBtn">Cancel</button>
+                <button class="sendBtn" id="next1" onclick="toNext2()">Next</button>
+                <button class="sendBtn" id="next2" onclick="toNext3()">Next</button>
+                <button class="sendBtn" id="next3" onclick="toNext4()">Next</button>
+                <button class="sendBtn" id="next4" onclick="toNext5()">Next</button>
+                <button class="sendBtn" id="next5" onclick="toFinish()">Finish</button>
             </div>
         </div>
     
