@@ -29,19 +29,15 @@ a {
 h1 {
     font-size: 42px;
     text-transform: uppercase; 
-    text-align: center;  
+    text-align: center;
+    line-height: 30%; 
 }
 
 h2 {
-    font-size: 28px;
-    color:  #b33939;
+    font-size: 24px;
     text-align: center;
     font-weight: bold;
-    padding-top: 20px;
-}
-
-#landing-links {
-    padding-bottom: 40px;
-    text-align: center;
-    font-size: 24px;
+    padding-bottom: 30px;
+    font-style: italic;
+    
 }
