@@ -90,18 +90,6 @@ label {
 }
 
 
-#signup .header h3 {
-    color:#b33939;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#signup .header p {
-    color: #cd6133;
-    font-size: 14px;
-    font-weight: 300;
-}
 
 #signup .sep {
     height: 1px;
@@ -162,14 +150,8 @@ input:-moz-placeholder {
     letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
-        background: -moz-linear-gradient(
-        top,
-        #ff793f 0%,
-        #cd6133);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#cd6133),
-        to(#ff793f));
+        background: #D7826F;
+    background: #D7826F;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -191,12 +173,12 @@ input:-moz-placeholder {
     clear: both;
 }
 
-#signup .inputs #submit:hover {
-    background: -moz-linear-gradient(
-        top,
-        #cd6133 0%,
-        #ffda79);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#cd6133),
-        to(#ffda79));
+#submit1 {
+    background: #D7826F;
+    padding-left: 10px;
+}
+
+#submit2 {
+    background: #D7826F;
+    padding-left: 10px;
+}
