@@ -1,10 +1,4 @@
-/* html {
-  background: url(background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
+
 
 body {
   margin: 0 auto;
@@ -48,39 +42,26 @@ img {
     margin-left: auto;
     display: block;
     margin-right: auto;
-    width: 35%;
+    width: 29%;
 
 }
 
 #image-container {
     text-align: center;
+    margin-top: 20px;
 }
 
 p {
     font-size: 22px;
 }
 
-label {
-    font-size: 22px;
-}
 
 /* ------------------------------------ FORM CSS -------------------------------------------- */
 
-/* .container {
-    width: 406px;
-    max-width: 406px; */
-    /* margin-left: 140px;
-    margin-top: 60px; */
-    /* margin: 0 auto;
-    margin-bottom: 20px;
-} */
 
 #signup {
     padding: 0px 25px 25px;
     background: #fff;
-    box-shadow: 
-        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
-        0px 4px 20px rgba( 0,0,0,0.33 );
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -90,18 +71,6 @@ label {
 }
 
 
-#signup .header h3 {
-    color:#b33939;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#signup .header p {
-    color: #cd6133;
-    font-size: 14px;
-    font-weight: 300;
-}
 
 #signup .sep {
     height: 1px;
@@ -116,24 +85,18 @@ label {
 
 #signup .inputs label {
     color: #8f8f8f;
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 7px;
     display: block;
 }
 
-input::-webkit-input-placeholder {
-    color:    #b5b5b5;
-}
 
-input:-moz-placeholder {
-    color:    #b5b5b5;
-}
 
 #signup .inputs input[type=email], input[type=password] {
     background: #f5f5f5;
-    font-size: 0.8rem;
+    font-size: 1rem;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -147,7 +110,7 @@ input:-moz-placeholder {
 
 #signup .inputs input[type=email]:focus, input[type=password]:focus {
     background: #fff;
-    box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+    box-shadow: 0px 0px 0px 3px #D7826F, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
     outline: none;   
 }
 
@@ -162,18 +125,12 @@ input:-moz-placeholder {
     letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
-        background: -moz-linear-gradient(
-        top,
-        #ff793f 0%,
-        #cd6133);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#cd6133),
-        to(#ff793f));
+        background: #D7826F;
+    background: #D7826F;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid#ffda79;
+    border: 1px solid #D7826F;
     -moz-box-shadow:
         0px 5px 5px rgba(000,000,000,0.1),
         inset 0px 1px 0px rgba(255,255,255,0.5);
@@ -191,12 +148,23 @@ input:-moz-placeholder {
     clear: both;
 }
 
-#signup .inputs #submit:hover {
-    background: -moz-linear-gradient(
-        top,
-        #cd6133 0%,
-        #ffda79);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#cd6133),
-        to(#ffda79));
+#submit1 {
+    background: #D7826F;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#submit2 {
+    background: #D7826F;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+   
+}
+
+input {
+    margin-bottom: 30px;
+}
