@@ -48,11 +48,20 @@ img {
     margin-left: auto;
     display: block;
     margin-right: auto;
+    width: 35%;
 
 }
 
 #image-container {
     text-align: center;
+}
+
+p {
+    font-size: 22px;
+}
+
+label {
+    font-size: 22px;
 }
 
 /* ------------------------------------ FORM CSS -------------------------------------------- */
@@ -77,11 +86,9 @@ img {
     border-radius: 5px;
     display: table;
     position: static;
+    margin: 0 auto;
 }
 
-#signup .header {
-    margin-bottom: 20px;
-}
 
 #signup .header h3 {
     color:#b33939;
