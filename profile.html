@@ -12,7 +12,7 @@
         <button class="logoutBtn">Logout</button>
     </header>
     <div class="content">
-        <button class="messageBtn">Send a message</button>
+        <button class="messageBtn" id="messageBtn">Send a message</button>
         <div class="messageContainer">
             <!-- List of items to display -->
             <div class="pDiv">
@@ -27,6 +27,10 @@
             <div class="pDiv">
                 <p class="fromP">From: J</p>
                 <p>THIS IS a section of text that someone has commented</p>
+            </div>
+            <div class="imgDiv">
+                <p class="fromP">From: J</p>
+                <img alt="Baby with a raised eyebrow saying, 'You mean to tell me that she's hiding behind her hands?" src="https://370g431nca8u23kfvb3cilkf-wpengine.netdna-ssl.com/wp-content/uploads/2013/05/6a0133f30ae399970b0192aa1b4c77970d-pi.jpg">
             </div>
             <div class="vidDiv">
                 <p class="fromP">From: J</p>
@@ -44,6 +48,31 @@
             </div>
         </div>
     </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Upload your content here:</p>
+            <div class="inputsDiv">
+                <label>
+                    Text
+                    <input type="text" name="" id="">
+                </label>
+                <label>
+                    Image URL
+                    <input type="text" name="" id="">
+                </label>
+                <label>
+                    Video URL
+                    <input type="text" name="" id="">
+                </label>
+            </div>
+        </div>
+    
+    </div>
     <script src="profileScript.js"></script>
+    <script src="profileScript2.js"></script>
 </body>
 </html>
