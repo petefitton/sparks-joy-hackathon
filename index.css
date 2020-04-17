@@ -1,18 +1,20 @@
-html {
+/* html {
   background: url(background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 body {
   margin: 0 auto;
+  background-color:  #FBF9EC;
+  font-family: 'Palanquin Dark', sans-serif;
 }
 
 header {
   padding-top: 2px;
-  background-color: #b33939;
+  background-color:  #D7826F;
   color: white;
 }
 
@@ -28,7 +30,7 @@ a {
 
 h1 {
     font-size: 42px;
-    text-transform: uppercase; 
+    text-transform: capitalize; 
     text-align: center;
     line-height: 30%; 
 }
@@ -47,8 +49,9 @@ h2 {
 .container {
     width: 406px;
     max-width: 406px;
-    margin-left: 140px;
-    margin-top: 60px;
+    /* margin-left: 140px;
+    margin-top: 60px; */
+    margin: 0 auto;
 }
 
 #signup {
